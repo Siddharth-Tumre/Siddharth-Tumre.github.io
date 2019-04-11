@@ -129,7 +129,7 @@ footer {
 
 .flex-container > div {
   background-color: #f1f1f1;
-  width: 30%, *;
+  width: 50%;
   font-size: 30px;
 }
 
