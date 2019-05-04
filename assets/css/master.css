@@ -52,7 +52,10 @@ img{
     display: none;
   }
   div.menu-container{
-    visibility: hidden;
+    display: none;
+  }
+  div.overlay{
+    display: none;
   }
 }
 @media (min-width:1000px) {
