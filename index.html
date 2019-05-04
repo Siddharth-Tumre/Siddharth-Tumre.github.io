@@ -10,6 +10,30 @@
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
   </head>
   <body>
+
+
+
+
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <img src="assets\images\sid.jpg" alt="Siddharth"><br><br>
+        <a href="#">SIDDHARTH</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div id="menu" class="menu-container" onclick="openNav()">
+      <div class="bar1"></div>
+      <div class="bar3"></div>
+    </div>
+
+
+
+
+
+
     <article>
     <section class="container">
       <div class="menu">
@@ -42,21 +66,18 @@
           </h1>
         </div>
           <div class="flex-container">
-            <div id="head">
-            <h2><i>ABOUT ME...</i></h2>
+            <div id="head" class="one">
+            <h2><strong><i>ABOUT ME...</i></strong></h2>
             </div>
-            <div>
-              <div id="ptext">
+              <div id="ptext" class="two">
               It all started a year back when I started using wordpress to develop webpages.
               I wondered how different themes in wordpress were built.<br><br>
               Then I came across html and css where we can stylize the webpages the way we want the page to look and also create webpages that are mobile responsive.
               Then I got into JavaScript because of its power to create great websites and has many frameworks.<br><br>
               But then I wondered how websites like twitter and facebook work because those websites not only display content which is prewritten but they display according to the users interests.
               Right after that I got into server-side languages php and python.
-              <br><br> I am continuosly working on my skills so that I could be a <b>"Full-Stack Web Developer"</b>
+              <br><br> I am continuosly working on my skills so that I could be a <strong>"Full-Stack Web Developer"</strong>
 </div>
-
-            </div>
             <div>
 
             </div>
@@ -79,5 +100,24 @@
                     <h6>Copyright @ 2019</h6>
                   </div>
       </footer>
+
+
+
+
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+  document.getElementById("menu").style.visibility="hidden";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+  document.getElementById("menu").style.visibility="visible";
+}
+</script>
   </body>
 </html>
