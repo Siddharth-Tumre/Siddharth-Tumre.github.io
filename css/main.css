@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css?family=Barriecito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Anton|Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+.container {
+  padding-bottom: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .container .row {
+    text-align: center; }
+    .container .row .col-xs-7 {
+      padding: 20px 30px;
+      border-bottom: orange 2px solid;
+      width: 100%; }
+    .container .row .col-xs-5 {
+      padding: 20px 0px;
+      border-bottom: orange 2px solid;
+      width: 100%; }
+      .container .row .col-xs-5 img {
+        width: 150px;
+        border-radius: 50%;
+        border: orange 3px solid; }
+
+body {
+  margin: 0;
+  background-color: #444;
+  color: #fff;
+  font-family: "Barriecito", cursive;
+  text-align: center;
+  line-height: 1.5; }
+
+.heading .letter {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  cursor: default; }
+  .heading .letter:hover {
+    color: orange;
+    opacity: 1;
+    -webkit-animation: wobble 0.5s;
+    animation: wobble 0.5s;
+    animation-timing-function: ease-in; }
+
+@media (min-width: 768px) {
+  .col-xs-5 {
+    width: unset !important;
+    border-bottom: none !important; }
+    .col-xs-5 img {
+      margin-right: 15px; }
+  .col-xs-7 {
+    width: unset !important;
+    border-bottom: none !important; }
+  .typewriter {
+    margin-top: 15px !important; } }
+
+@media (min-width: 568px) and (max-width: 767px) {
+  .col-xs-5 {
+    width: unset !important;
+    border-bottom: none !important; }
+    .col-xs-5 img {
+      margin-right: 15px; }
+  .col-xs-7 {
+    width: unset !important;
+    border-bottom: none !important; }
+  .typewriter {
+    margin-top: 30px !important; } }
+
+@media (min-width: 768px) {
+  h1,
+  h2 {
+    font-size: 2.1rem !important; } }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.5rem; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    font-size: 3rem !important;
+    font-family: "Ubuntu", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-weight: bolder; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    font-size: 1.3rem !important;
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5);
+    text-align: left;
+    transition: 0.2s; }
+    h1.sm-heading:hover,
+    h2.sm-heading:hover,
+    h3.sm-heading:hover {
+      transform: scale(1.05); }
+
+.typewriter {
+  width: max-content;
+  margin: auto; }
+  .typewriter h1 {
+    color: #fff;
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    animation: typing 4.5s steps(30, end), blink-caret 0.5s step-end infinite;
+    display: flex; }
+
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent; }
+  50% {
+    border-color: orange; } }
+
+#navbar {
+  display: flex;
+  overflow: hidden;
+  background-color: #333;
+  position: absolute;
+  font-family: "Ubuntu", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  bottom: 0px;
+  width: 100%;
+  letter-spacing: 3px;
+  z-index: 5; }
+
+#navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  width: 100%; }
+
+#navbar a:hover {
+  background-color: rgba(255, 165, 0, 0.7);
+  color: white; }
+
+.sticky {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100%;
+  bottom: unset !important; }
+
+#welcome-section {
+  overflow: hidden;
+  height: 100vh; }
+
+.designation {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center; }
+  .designation h2 {
+    color: #fff;
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+    display: flex;
+    text-align: center; }
+    .designation h2 .letter {
+      color: #fff; }
+      .designation h2 .letter:hover {
+        color: orange;
+        animation-name: scale;
+        animation-duration: 0.1s;
+        animation-fill-mode: forwards; }
+
+@keyframes scale {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.7); } }
+
+.wrap {
+  margin-top: 60px;
+  width: 100%;
+  font-family: "Ubuntu", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder; }
+
+.bar {
+  max-width: 100%;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+  height: 28px;
+  margin: 0 0 15px 0;
+  font-size: 13pt;
+  font-weight: bold;
+  transition: 0.2s; }
+  .bar:hover {
+    transform: scale(1.03); }
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.tag {
+  width: 20%;
+  background-color: orange;
+  height: 100%;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: #444 1px solid; }
+
+.fill {
+  background-color: rgba(255, 165, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  opacity: 0; }
+
+.animate {
+  animation: width 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s; }
+
+@keyframes width {
+  from {
+    width: 0px; }
+  to {
+    opacity: 1; } }
+
+.bar .tag {
+  width: 110px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%; }
+
+.bar span {
+  display: initial;
+  z-index: 1;
+  padding: 0 15px 0 0; }
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.project-title {
+  width: 300px;
+  height: 200px;
+  background-color: orange;
+  margin: 5px;
+  border: orange 2px solid;
+  transition: 0.2s;
+  margin-bottom: 20px; }
+  .project-title:hover {
+    transform: scale(1.03); }
+    .project-title:hover .desc {
+      opacity: 1; }
+  .project-title img {
+    width: 100%;
+    height: 70%; }
+  .project-title .desc {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    opacity: 0.7;
+    color: #fff;
+    line-height: 20px; }
+  .project-title a {
+    text-decoration: none; }
+
+@media (max-width: 786px) {
+  #navbar {
+    display: none; }
+  #mobilemenu {
+    visibility: visible !important; }
+  .sidenav {
+    visibility: visible !important; }
+  .wrap {
+    margin-top: 0px; } }
+
+.sidenav {
+  visibility: hidden;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: "Ubuntu", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+.sidenav a:hover {
+  color: #f1f1f1; }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+  .sidenav a {
+    font-size: 18px; } }
+
+#mobilemenu {
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  background-color: #111;
+  opacity: 0.6;
+  visibility: hidden; }
+  #mobilemenu:hover {
+    opacity: 1; }
+
+.contact-links a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #818181;
+  transition: 0.3s; }
+
+.contact-links a:hover {
+  color: orange; }
