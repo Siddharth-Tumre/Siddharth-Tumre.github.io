@@ -56,7 +56,7 @@ body {
     width: unset !important;
     border-bottom: none !important; }
   .typewriter {
-    margin-top: 15px !important; } }
+    margin-top: 17px !important; } }
 
 @media (min-width: 568px) and (max-width: 767px) {
   .col-xs-5 {
@@ -68,7 +68,7 @@ body {
     width: unset !important;
     border-bottom: none !important; }
   .typewriter {
-    margin-top: 23px !important; } }
+    margin-top: 30px !important; } }
 
 @media (min-width: 767px) {
   h1,
